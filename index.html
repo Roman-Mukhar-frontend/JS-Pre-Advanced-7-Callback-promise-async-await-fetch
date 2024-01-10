@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+        <form class="search-box">
+            <label>
+                <input type="text" class="search-input" placeholder="Write movie name">
+                <div class="search-close hide"></div>
+            </label>
+            <input type="button" onclick="getData()" class="search-btn" value="search">
+        </form><!--End Search form -->
+        <div class="movies-container"> </div>
+
+        <div class="modal hide">
+            <div onclick="event.stopPropagation()" class="detalis-movie">
+                <div class="detalis-border">
+                    <div class="detalis-img"></div>
+                    <div class="detalis-text">
+                        <div class="title"></div>
+                        <span class="rated"></span>&nbsp<span class="year">
+                        </span>&nbsp<span class="genre"></span>
+                        <p class="plot"> </p>
+                        <p class="bold-text">Written by: <Span class="writer"></Span></p>
+                        <p class="bold-text">Directed by: <Span class="director"></Span></p>
+                        <p class="bold-text">Starring: <Span class="actors"></Span></p>
+                        <p class="bold-text">BoxOffice: <Span class="boxOffice"></Span></p>
+                        <p class="bold-text">Awards: <Span class="awards"></Span></p>
+                        <span class="bold-text">Ratings: <ul class="ratings"></ul></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

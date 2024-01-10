@@ -1,0 +1,193 @@
+@import url(reset.css);
+
+.search-box {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.search-btn {
+  height: 39px;
+  border-radius: 5px;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid grey;
+  outline: 1px solid grey;
+
+}
+
+.search-btn {
+  width: 49%;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  font-size: 18px;
+}
+
+.search-btn:hover {
+  background-color: burlywood;
+  border: 1px solid burlywood;
+}
+
+label {
+  width: 49%;
+  display: block;
+  position: relative;
+}
+
+.search-close {
+  background-image: url(./image/times.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+
+.movies-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie {
+  width: 301px;
+  height: 600px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(146, 145, 145, 0.658);
+}
+
+.img-movie {
+  width: 100%;
+  height: 446px;
+  box-shadow: 1px 1px 18px 0 rgba(5, 5, 5, 0.89);
+}
+
+.name-movie {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-family: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  background-color: rgb(139, 136, 136);
+  overflow: hidden;
+}
+
+.text-movie,
+.year-movie {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 500;
+}
+
+.btn-movie {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(12, 139, 12);
+  border: 1px solid rgb(13, 129, 13);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-color: rgba(44, 44, 44, 0.527);
+  z-index: 3;
+}
+
+.detalis-movie {
+  margin: 25px auto;
+  width: 1100px;
+  height: 550px;
+  background-color: rgb(252, 248, 248);
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.detalis-border {
+  width: 1050px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px solid rgb(194, 191, 191);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.detalis-img {
+  width: 310px;
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+}
+
+.detalis-text {
+  width: 650px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(194, 191, 191);
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bold-text {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.rated,
+.year,
+.genre,
+.writer,
+.director,
+.actors,
+.boxOffice,
+.awards,
+.ratings,
+.plot {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(122, 120, 120);
+}
+
+.plot {
+  margin: 10px 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.focus {
+  border: 1px solid rgb(26, 52, 165);
+  box-shadow: 1px 1px 10px 0 rgb(26, 52, 165);
+}
+
+.hide {
+  display: none;
+}
